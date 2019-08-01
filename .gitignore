@@ -10,3 +10,4 @@ Cargo.lock
 **/*.rs.bk
 
 snippet/test1/guess_game/target/
+snippet/test1/variables/target/
