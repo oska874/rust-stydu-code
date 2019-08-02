@@ -12,3 +12,4 @@ Cargo.lock
 snippet/test1/guess_game/target/
 snippet/test1/variables/target/
 snippet/test1/structs/target/
+snippet/test1/*/target/
