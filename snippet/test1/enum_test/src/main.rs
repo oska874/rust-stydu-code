@@ -44,10 +44,25 @@ fn main() {
 }
 
 impl Message{
-    fn call(&self){
+    fn call(&self)->Option<i32>{
         match self{
-            Message::Quit => println!("1"),
-            Message::Write => println!("{}", Message::as String),
+            Message::Quit => {
+                println!("1");
+                Some(1)
+            },
+            Message::Write(_) => {
+                println!("2");
+                Some(2)
+            },
+            Message::Move{ x,y } => {
+                println!("3");
+                println!("{} {}",x,y);
+                Some(3)
+            },
+            Message::ChangeColor(_,_,_) => {
+                println!("4");
+                None
+            },
         }
     }
 }
